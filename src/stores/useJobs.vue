@@ -47,4 +47,6 @@ const jobs: MyJobs = [
 export const useJobs = reactive({
     jobs,
 });
+
+export default jobs;
 </script>

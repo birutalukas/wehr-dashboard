@@ -10,15 +10,15 @@ const toggleDropdown = () => {
     dropdown.openState = !dropdown.openState;
 };
 const props = defineProps<{
-    title: String;
-    buttonText: String;
-    darkMode: Boolean;
-    extendHeader: Boolean;
-    footerText: String;
-    function: Function;
-    sortByPrice: Function;
-    sortByRating: Function;
-    sortByTitle: Function;
+    title?: string;
+    buttonText?: string;
+    darkMode?: boolean;
+    extendHeader?: boolean;
+    footerText?: string;
+    function?: Function;
+    sortByPrice?: Function;
+    sortByRating?: Function;
+    sortByTitle?: Function;
 }>();
 </script>
 
@@ -40,19 +40,19 @@ const props = defineProps<{
                     <div class="list">
                         <button
                             class="item"
-                            @click="props.sortByTitle(usePhones.smartphones)"
+                            @click="props.sortByTitle?.(usePhones.smartphones)"
                         >
                             - Title
                         </button>
                         <button
                             class="item"
-                            @click="props.sortByRating(usePhones.smartphones)"
+                            @click="props.sortByRating?.(usePhones.smartphones)"
                         >
                             - Rating
                         </button>
                         <button
                             class="item"
-                            @click="props.sortByPrice(usePhones.smartphones)"
+                            @click="props.sortByPrice?.(usePhones.smartphones)"
                         >
                             - Price
                         </button>

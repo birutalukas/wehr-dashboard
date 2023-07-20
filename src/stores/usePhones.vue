@@ -20,4 +20,6 @@ export const usePhones = reactive({
     smartphones,
     schedule,
 });
+
+export default smartphones;
 </script>

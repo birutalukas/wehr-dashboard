@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const props = defineProps<{
-    heading: String;
-    title: String;
-    description: String;
-    rating: Number;
-    price: Number;
-    pinnable: Boolean;
+    heading?: string;
+    title?: string;
+    description?: string;
+    rating?: number;
+    price?: number;
+    pinnable?: boolean;
 }>();
 </script>
 

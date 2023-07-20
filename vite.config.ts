@@ -8,4 +8,9 @@ export default defineConfig({
         https: true,
     },
     plugins: [vue(), mkcert()],
+    build: {
+        commonjsOptions: {
+            exclude: ["ckeditor/*"],
+        },
+    },
 });
