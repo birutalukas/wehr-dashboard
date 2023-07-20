@@ -9,17 +9,17 @@ const dropdown = reactive({
 const toggleDropdown = () => {
     dropdown.openState = !dropdown.openState;
 };
-const props = defineProps({
-    title: { type: String, required: true },
-    buttonText: { type: String, required: false },
-    darkMode: { type: Boolean, required: false },
-    extendHeader: { type: Boolean, required: false },
-    footerText: { type: String, required: false },
-    function: { type: Function, requred: false },
-    sortByPrice: { type: Function, required: false },
-    sortByRating: { type: Function, required: false },
-    sortByTitle: { type: Function, required: false },
-});
+const props = defineProps<{
+    title: String;
+    buttonText: String;
+    darkMode: Boolean;
+    extendHeader: Boolean;
+    footerText: String;
+    function: Function;
+    sortByPrice: Function;
+    sortByRating: Function;
+    sortByTitle: Function;
+}>();
 </script>
 
 <template>

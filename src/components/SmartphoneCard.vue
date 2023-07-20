@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const props = defineProps({
-    heading: { type: String, required: false },
-    title: { type: String, required: true },
-    description: { type: String, required: false },
-    rating: { type: Number, required: false },
-    price: { type: Number, required: true },
-    pinnable: { type: Boolean, required: false },
-});
+const props = defineProps<{
+    heading: String;
+    title: String;
+    description: String;
+    rating: Number;
+    price: Number;
+    pinnable: Boolean;
+}>();
 </script>
 
 <template>
